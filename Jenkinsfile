@@ -11,7 +11,7 @@ pipeline {
     }
 
     environment {
-      SECRETKEYFILE = credentials('gcp_ssh_key')
+      SECRETKEYFILE = credentials('ssh_key')
       VERSION = readMavenPom().getVersion()
     }
 
