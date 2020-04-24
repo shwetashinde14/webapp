@@ -16,7 +16,7 @@ Deploy ```target/WebApp.war``` on Tomcat
  
 ### Jenkinsfile based CICD
 
-* Jenkins input: TomcatHost(Tomcat server IP)
+* Jenkins input: TomcatHost(Tomcat server IP), RemoteHost_UserName(defaultValue: jenkins| username you want to connect as, to the remote host. Ex: For AWS EC2 Amazon Linux 2 AMI: ec2-user)
 
 * ssh key stored in Jenkins Credentials with name 'ssh_key' for logging into tomcat instance
 
