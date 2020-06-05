@@ -18,19 +18,20 @@ pipeline {
     }
 
     stages {
-           
+        
+	//if sonar is configured, 'mvn clean test sonar:sonar <sonar options>'
+        stage('unit tests and coverage') {
+            steps {
+             sh "mvn test"
+            }
+        }
+	
         stage('Build') {
             steps {
              sh "mvn clean install"  
             }
         }
         
-        //if sonar is configured, 'mvn clean test sonar:sonar <sonar options>'
-        stage('unit tests and coverage') {
-            steps {
-             sh "mvn test"
-            }
-        }
 
         stage('Deploy') {
             steps {
