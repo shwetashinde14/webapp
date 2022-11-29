@@ -1,6 +1,6 @@
 mirrored from https://github.com/sebsto/webapp
 
-# This is a sample Web Application to use during Continuous Integration demos.
+# This is a sample Web Application to use during Continuous Integration demos..
 
 ## Build Instruction
 
