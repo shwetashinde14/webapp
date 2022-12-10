@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage ('new_folder') {
             steps {
-                sh 'mkdir Dee-copy'
+                sh 'mkdir Dee-copy-1'
             }
         }
     }
